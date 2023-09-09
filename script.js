@@ -42,7 +42,11 @@ const active = (currentIndex) => {
     link[currentIndex].classList.add("active");
   });
 };
-
+const func = (currentIndex) => {
+  uptadeCard(currentIndex);
+  disabled(currentIndex);
+  active(currentIndex);
+};
 link.forEach((el, index) => {
   el.addEventListener("click", () => {
     link.forEach((linkItem) => linkItem.classList.remove("active"));
@@ -57,24 +61,16 @@ btn.forEach((item, index) => {
   item.addEventListener("click", () => {
     if (index == 0) {
       currentIndex = 0;
-      uptadeCard(currentIndex);
-      disabled(currentIndex);
-      active(currentIndex);
+      func(currentIndex);
     } else if (index == 1) {
       currentIndex++;
-      uptadeCard(currentIndex);
-      disabled(currentIndex);
-      active(currentIndex);
+      func(currentIndex);
     } else if (index == 2) {
       currentIndex--;
-      uptadeCard(currentIndex);
-      disabled(currentIndex);
-      active(currentIndex);
+      func(currentIndex);
     } else if (index == 3) {
       currentIndex = 4;
-      uptadeCard(currentIndex);
-      disabled(currentIndex);
-      active(currentIndex);
+      func(currentIndex);
     }
   });
 });
