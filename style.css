@@ -1,0 +1,89 @@
+body{
+    height: 100vh;
+    background-color: rgb(0, 155, 251);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    margin-bottom: 40px;
+    width: 800px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.341);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    border-radius: 15px;
+    height: 100vh;
+}
+.cards div {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(249, 233, 205);
+    border-radius: 15px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.links {
+    display: flex;
+
+}
+.link,
+.link-active,
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.227);
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+button:disabled{
+    color: gray;
+    pointer-events: none;
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+.link:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.active:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.active{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
