@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    width: 300px;
+    height: 350px;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(121, 206, 252);
+}
+ul{
+    width: 100%;
+    margin: 0;
+}
+li{
+    font-size: medium;
+    width: 100%;
+    margin-left: 20px;
+}
+
+button{
+    position: absolute;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 47px;
+    box-shadow: 2px 2px 2px black;
+}
