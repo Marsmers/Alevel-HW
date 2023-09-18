@@ -1,0 +1,24 @@
+#usersContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.user {
+    margin: 15px;
+    width: 250px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.user div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px
+}
